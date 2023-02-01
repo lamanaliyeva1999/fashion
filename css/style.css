@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{font-family: "Open-sans";}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+
+}
+.Nav-Icons{
+    width: 100px;
+    display: flex;
+    gap: 30px;
+   
+}
+
+
+.fa-brands{
+    color: white;
+    font-size: 20px;
+}
+
+.Section1{
+    width: 100%;
+    height: 35vh;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Section1-Text-BlogLife{
+font-size: 40px;
+font-family: "Oswald";
+}
