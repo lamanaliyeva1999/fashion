@@ -1,48 +1,597 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{font-family: "Open-sans";}
 
-.Navbar{
+body {
+    font-family: "Open-sans";
+    background-color: #f1f1f1;
+}
+
+.Navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
-    background: black;
-    padding-left: 20px;
-    padding-right: 20px;
+    height: 40px;
+
+    background-color: black;
     align-items: center;
 
 }
-.Nav-Icons{
+
+.Nav-Icons {
     width: 100px;
     display: flex;
-    gap: 30px;
-   
+
+
 }
 
+.Icon-Links-Nav {
+    text-decoration: none;
+}
 
-.fa-brands{
+.Icon-Links-Nav i {
+    color: black;
+    font-size: 15px;
+    width: 50px;
+    height: 40px;
     color: white;
-    font-size: 20px;
-}
-
-.Section1{
-    width: 100%;
-    height: 35vh;
-    border: solid 1px black;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Section1-Text-BlogLife{
-font-size: 40px;
-font-family: "Oswald";
-font-weight: 400;
+
+.fa-brands:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+
+.Section1 {
+    width: 100%;
+    height: 25vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Section1-Text-BlogLife {
+    font-size: 55px;
+    font-family: "Oswald";
+
+}
+
+.Section1-Text-Item {
+
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.Section1-Text-Span {
+    width: 100px;
+    height: 27px;
+    background-color: black;
+    display: inline-block;
+    color: white;
+    padding-top: 5px;
 }
 
 .Section2 {
+    height: 120vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(assets/images/jane.jpeg);
+    position: relative;
 
+}
+
+.Section2-Text {
+    position: absolute;
+    gap: 15px;
+    display: flex;
+    top: 40%;
+    left: 30px;
+    flex-direction: column;
+    color: white;
+}
+
+.Section2-Subscribe-Btn {
+    width: 130px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.Section2-Subscribe-Btn:hover {
+    opacity: 3;
+}
+
+.Section2-Text-Jane {
+    font-size: 40px;
+}
+
+.Section2-Text-Fashion {
+    font-size: 60px;
+
+}
+
+.Section-Container {
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+.Section3 {
+
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+
+}
+
+.Section3-Box1 {
+    width: 68%;
+
+
+}
+
+.Section3-Box2 {
+    width: 30%;
+
+}
+
+.Section3-Box1-Text {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Section3-Box1-Title-Heading {
+    font-size: 23px;
+}
+
+.Section3-Box1-Title-Description {
+    font-size: 19px;
+}
+
+.Section3-Box1-Photo1 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Section3-Box1-Item1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+    background-color: white;
+}
+
+.Section3-Box1-Item1-Text {
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: justify;
+
+}
+
+.Same-Btn {
+    border: solid 0.5px black;
+    cursor: pointer;
+    font-size: 16px;
+    height: 40px;
+    background-color: white;
+}
+
+.Same-Btn:hover {
+    background-color: #ccc;
+}
+
+.Like-Btn {
+    width: 90px;
+
+}
+
+.Like-Btn-Text {
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.Replay-Btn {
+    width: 120px;
+
+    border: solid 0.5px black;
+    cursor: pointer;
+    font-size: 16px;
+
+    background-color: black;
+    color: white;
+}
+
+.Replay-Btn:hover {
+    color: black;
+}
+
+.Replay-Btn-Number {
+
+    margin-left: 15px;
+
+    padding-top: 2px;
+    width: 25px;
+    height: 23px;
+    display: inline-block;
+    border: solid 1px black;
+    color: black;
+    background-color: white;
+}
+
+.Section3-Box1-Item1-Buttons {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+}
+
+.Button-Border {
+    border-bottom: 1px solid gainsboro;
+}
+
+.Section3-Box1-Item1-Bottom {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.Item1-Bottom-Photo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.Item1-Bottom-Text {
+    margin-left: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    margin-top: 20px;
+}
+
+.Same-Date-Text {
+    color: gray;
+    display: inline-block;
+}
+
+.Section3-Box2-Item1 {
+    position: relative;
+    height: 410px;
+    background-color: white;
+}
+
+.Section3-Box2-Photo1 {
+    width: 100%;
+    height: 250px;
+    vertical-align: middle;
+    border-style: none;
+
+}
+
+.Section3-Box2-Photo-Box {
+    width: 100%;
+    height: 160px;
+    background-color: black;
+    position: absolute;
+
+
+}
+
+.Section3-Box2-Photo-Heading {
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+
+}
+
+.Section-Box2-Photo-Text {
+    color: white;
+    font-size: 17px;
+    width: 380px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.Section3-Box2-Box-Headings {
+
+    height: 70px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    padding-left: 20px;
+    padding-top: 23px;
+}
+
+.Section3-Box2-Popular-Posts {
+    height: 85px;
+
+
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.Section3-Box2-Popular-Posts:hover {
+    background-color: #ccc;
+}
+
+.Section3-Box2-Same-Type {
+    margin-top: 50px;
+
+}
+
+.Popular-Post-Photos {
+    width: 50px;
+    margin-left: 15px;
+
+
+}
+
+.Popular-Post-Text-Box {
+    display: inline-block;
+
+}
+
+.Popular-Post-Text1 {
+    font-size: 20px;
+}
+
+.Popular-Post-Text2 {
+    font-size: 18px;
+}
+
+.Section3-Box2-Item2 {
+
+    height: 300px;
+    position: relative;
+    background-color: white;
+
+}
+
+.Advertise-Box {
+
+    width: 380px;
+    top: 85px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 15px;
+ 
+}
+
+.Advertise-Box-Child {
+
+    width: 380px;
+    height: 200px;
+    color: black;
+    padding-left: 130px;
+    padding-top: 80px;
+    background-color: #f1f1f1;
+}
+
+.Section3-Box2-Item3 {
+
+    height: 230px;
+    background-color: white;
+
+}
+
+.Tag-Text-Box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.Tag-Text-Box-Item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    height: 150px;
+
+ 
+
+
+    width: 380px;
+
+}
+
+.Tag-Text {
+    font-size: 13px;
+    padding-top: 2px;
+    color: #000;
+    background-color: #f1f1f1;
+
+    width: 70px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.Tag-width {
+   
+    display: flex;
+    gap: 10px;
+
+}
+
+.Section3-Box2-Item4 {
+
+    height: 370px;
+    background-color: white;
+}
+
+.Inspiration-Photo {
+    width: 180px;
+
+}
+
+.Inspiration-Box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Inspiration-Photo-Box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+ 
+    width: 380px;
+
+
+}
+
+.Inspiration-Photo-Box-Item {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+
+}
+
+.Section3-Box2-Item5 {
+
+    height: 120px;
+    background-color: white;
+}
+
+.Follow-Icons {
+    color: black;
+    size: 10px;
+    font-size: 23px;
+    letter-spacing: 3px;
+
+}
+
+.Follow-Icons-Box {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    gap: 10px;
+}
+
+.Section3-Box2-Item6 {
+    height: 250px;
+
+    background-color: white;
+}
+
+
+.Input-Email {
+    width: 100%;
+    height: 45px;
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+
+.Section3-Box2-Item6-Subscribe-Btn {
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #f44336;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.Section3-Box2-Item6-Subscribe-Btn:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    color: black;
+}
+
+.Subscribe-Box-Item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+
+
+}
+
+.Subscribe-Common-Box {
+ 
+    width: 380px;
+
+}
+
+.Input-Email {
+    margin-top: 15px;
+}
+
+.Section3-Box2-Item6-Subscribe-Btn {
+    margin-top: 10px;
+}
+
+.Subscribe-Box-Text {
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+.Footer {
+    width: 100%;
+    height: 180px;
+    color: #fff;
+    background-color: #616161;
+    margin-top: 25px;
+
+}
+
+.fa-arrow-up {
+    padding-right: 5px;
+}
+
+.Footer-Top-Link {
+    text-align: center;
+    padding-top: 15px;
+    display: inline-block;
+    width: 145px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    margin-top: 30px;
+
+}
+
+.Footer-Top-Link:hover {
+    color: black;
+    background-color: #ddd;
+}
+
+.Footer-Link {
+    color: white;
+    font-size: 17px;
+}
+
+.Footer-Box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
