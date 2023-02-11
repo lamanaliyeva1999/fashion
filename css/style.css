@@ -581,3 +581,33 @@ flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
 }
+@media (max-width:1200px){
+    .Section-Box-s{display: flex;
+    flex-direction: column;}
+    .Section1 {
+       
+        height: 20vh;
+     
+    }
+    .Section2 {
+        height: 65vh;
+        
+    }
+    .Section2-Text{top: 35%;}
+    .Section3{margin-top: 35px;}
+    .Section3-Box1{width: 64%;}
+    .Description-April-2-Box{margin-top: 40px;}
+    .Section3-Box2{width: 33%;}
+    .Inspiration-Photo-Box {
+      
+        gap: 15px;}
+      
+    
+    .Footer{height: 200px;}
+   
+}
+@media(max-width:992px){
+    .Section3{flex-direction: column;}
+    .Section3-Box1{width: 100%;}
+    .Section3-Box2{width: 100%;}
+}
