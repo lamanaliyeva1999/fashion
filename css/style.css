@@ -51,11 +51,13 @@ body {
 
 .Section1 {
     width: 100%;
-    height: 25vh;
-    background-color:white;
+    /* height: 25vh; */
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 48px 16px;
+
 }
 
 .Section1-Text-BlogLife {
@@ -78,12 +80,13 @@ body {
     background-color: black;
     display: inline-block;
     color: white;
-  padding: 4px;
+    padding: 4px;
 }
 
 .Section2 {
-    height: 120vh;
-    width: 100%;
+    height: 1060px;
+
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,7 +138,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
-   
+
 
 }
 
@@ -160,6 +163,7 @@ body {
 
 .Section3-Box1-Title-Heading {
     font-size: 23px;
+    font-weight: 400;
 }
 
 .Section3-Box1-Title-Description {
@@ -175,8 +179,19 @@ body {
     padding-left: 20px;
     padding-right: 20px;
     width: 100%;
-margin-bottom: 20px;
     background-color: white;
+
+}
+
+.Section3-Box1-Title-Description {
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Oswald";
+}
+
+.Section3-Box1-Title-Heading {
+    font-size: 24px;
+    font-family: "Oswald";
 }
 
 .Section3-Box1-Item1-Text {
@@ -211,7 +226,7 @@ margin-bottom: 20px;
 .Replay-Btn {
     width: 120px;
 
-   
+
 
     background-color: black;
     color: white;
@@ -270,11 +285,14 @@ margin-bottom: 20px;
     display: inline-block;
 }
 
-.Section3-Box2-Item1 {
-  
-    height: 410px;
-    background-color: white;
+.Same-Speciality {
+    margin-top: 40px;
 }
+
+.Same-Margin {
+    margin-top: 15px;
+}
+
 
 .Section3-Box2-Photo1 {
     width: 100%;
@@ -288,7 +306,7 @@ margin-bottom: 20px;
     width: 100%;
     height: 160px;
     background-color: black;
-  
+
 
 
 }
@@ -303,7 +321,7 @@ margin-bottom: 20px;
 .Section-Box2-Photo-Text {
     color: white;
     font-size: 17px;
- padding-right: 20px;
+    padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
 }
@@ -320,7 +338,7 @@ margin-bottom: 20px;
 
 .Section3-Box2-Popular-Posts {
     height: 85px;
-
+    background-color: white;
 
     gap: 20px;
     display: flex;
@@ -360,27 +378,27 @@ margin-bottom: 20px;
 .Section3-Box2-Item2 {
 
     height: 300px;
-   
+
     background-color: white;
 
 }
 
 .Advertise-Box {
 
-   padding: 20px;
-   width: 100%;
-   height: 230px;
- 
+    padding: 20px;
+    width: 100%;
+    height: 230px;
+
 }
 
 .Advertise-Box-Child {
 
     width: 100%;
     height: 190px;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #f1f1f1;
 }
 
@@ -397,12 +415,12 @@ margin-bottom: 20px;
 
 .Tag-Text-Box-Item {
     display: flex;
-flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 10px;
 
-   
 
- 
+
+
 
 
 
@@ -422,7 +440,7 @@ flex-wrap: wrap;
 }
 
 .Tag-width {
-   
+
     display: flex;
     gap: 10px;
 
@@ -430,7 +448,7 @@ flex-wrap: wrap;
 
 .Section3-Box2-Item4 {
 
-    height: 370px;
+    /* height: 370px; */
     background-color: white;
 }
 
@@ -441,18 +459,18 @@ flex-wrap: wrap;
 
 .Inspiration-Box {
     display: flex;
-  
-   height: 300px;
-   
+
+    height: 300px;
+
     padding: 20px;
 }
 
 .Inspiration-Photo-Box {
     display: flex;
-  flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
- 
- 
+
+
 
 
 }
@@ -466,7 +484,7 @@ flex-wrap: wrap;
 
 .Section3-Box2-Item5 {
 
-   
+
     background-color: white;
 }
 
@@ -484,9 +502,13 @@ flex-wrap: wrap;
     gap: 10px;
     align-items: center;
 }
-.Follow-Icons-Box .fa-brands:hover{opacity: 0.7;}
+
+.Follow-Icons-Box .fa-brands:hover {
+    opacity: 0.7;
+}
+
 .Section3-Box2-Item6 {
-   
+
 
     background-color: white;
 }
@@ -497,6 +519,7 @@ flex-wrap: wrap;
     height: 45px;
     padding-left: 10px;
     font-size: 15px;
+    border: solid 1px gainsboro;
 
 }
 
@@ -528,16 +551,19 @@ flex-wrap: wrap;
 
 }
 
-
+.Subscribe-Common-Box {
+    width: 100%;
+}
 
 .Input-Email {
     margin-top: 15px;
+
 }
 
 
 .Subscribe-Box-Text {
     font-size: 17px;
-   
+
 }
 
 .Footer {
@@ -581,33 +607,194 @@ flex-wrap: wrap;
     flex-direction: column;
     gap: 30px;
 }
-@media (max-width:1200px){
-    .Section-Box-s{display: flex;
-    flex-direction: column;}
-    .Section1 {
-       
-        height: 20vh;
-     
+
+@media (max-width:1200px) {
+
+
+
+    .Section1-Text-BlogLife {
+        font-size: 52px;
     }
+
     .Section2 {
-        height: 65vh;
-        
+
+        height: 830px;
+
+
     }
-    .Section2-Text{top: 35%;}
-    .Section3{margin-top: 35px;}
-    .Section3-Box1{width: 64%;}
-    .Description-April-2-Box{margin-top: 40px;}
-    .Section3-Box2{width: 33%;}
+
+    .Section2-Text {
+        top: 35%;
+    }
+
+    .Section3 {
+        margin-top: 35px;
+    }
+
+    .Section3-Box1 {
+        width: 64%;
+    }
+
+
+
+    .Section3-Box2 {
+        width: 33%;
+    }
+
+    .Section3-Box2-Same-Type {
+        margin-top: 40px;
+
+    }
+
+    .Section3-Box2-Photo1 {
+
+        height: 200px;
+
+
+
+    }
+
     .Inspiration-Photo-Box {
-      
-        gap: 15px;}
-      
-    
-    .Footer{height: 200px;}
-   
+
+        gap: 19px;
+    }
+
+
+    .Footer {
+        height: 200px;
+    }
+
 }
-@media(max-width:992px){
-    .Section3{flex-direction: column;}
-    .Section3-Box1{width: 100%;}
-    .Section3-Box2{width: 100%;}
+
+@media(max-width:992px) {
+    .Section2 {
+        height: 700px;
+    }
+
+    .Section3 {
+        flex-direction: column;
+    }
+
+    .Section3-Box1 {
+        width: 100%;
+    }
+
+    .Section3-Box2-Item1 {
+        margin-top: 25px;
+    }
+
+    .Section3-Box2-Photo1 {
+
+        height: 450px;
+
+
+
+    }
+
+    .Section3-Box2-Photo-Box {
+
+        height: 130px;
+
+
+
+
+    }
+
+    .Section3-Box2 {
+        width: 100%;
+    }
+
+    .Inspiration-Box {
+        margin-left: 15px;
+        height: 610px;
+    }
+
+    .Inspiration-Photo-Box {
+
+        gap: 30px;
+    }
+}
+
+@media(max-width:768px) {
+
+
+    .Section2 {
+
+        height: 500px;
+
+
+    }
+
+    .Section3-Box2-Photo1 {
+
+        height: 380px;
+
+
+
+    }
+
+    .Section3-Box2-Popular-Posts {
+        height: 80px;
+
+    }
+
+
+    .Section3-Box2-Item3 {
+
+        height: 170px;
+
+
+    }
+
+    .Inspiration-Box {
+        margin-right: 10px;
+        height: 500px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .Navbar {
+        display: none;
+    }
+
+    .Section2 {
+
+        height: 370px;
+
+
+    }
+
+    .Section1-Text-BlogLife {
+        font-size: 49px;
+    }
+
+    .Section2-Text-Fashion {
+        display: none;
+    }
+
+    .Section3-Box2-Photo1 {
+
+        height: 280px;
+
+
+
+    }
+
+    .Inspiration-Photo-Box {
+
+        gap: 15px;
+    }
+
+    .Inspiration-Box {
+
+        height: 320px;
+    }
+
+    .Inspiration-Photo {
+        width: 48%;
+
+    }
+    
 }
