@@ -103,6 +103,7 @@ body {
     left: 30px;
     flex-direction: column;
     color: white;
+    font-family: "Oswald";
 }
 
 .Section2-Subscribe-Btn {
@@ -234,16 +235,20 @@ body {
 
 .Replay-Btn:hover {
     color: black;
+
 }
 
 .Replay-Btn-Number {
 
-    margin-left: 15px;
 
-    padding-top: 2px;
-    width: 25px;
-    height: 23px;
-    display: inline-block;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+margin-left: 10px;
+  
+
+ 
     border: solid 1px black;
     color: black;
     background-color: white;
@@ -251,11 +256,14 @@ body {
 
 .Section3-Box1-Item1-Buttons {
     margin-top: 40px;
+    display: inline-block;
     width: 100%;
     display: flex;
+    padding: 8px 16px;
     justify-content: space-between;
-
-    height: 100px;
+flex-wrap: wrap;
+  
+  
 }
 
 .Button-Border {
@@ -264,20 +272,26 @@ body {
 
 .Section3-Box1-Item1-Bottom {
     display: flex;
-    margin-top: 20px;
+  align-items: center;
+   
+    flex-wrap: wrap;
+   
+  gap: 10px;
 
 }
 
 .Item1-Bottom-Photo {
-    width: 100px;
-    margin-bottom: 20px;
+    width: 90px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   
 }
 
 .Item1-Bottom-Text {
-    margin-left: 40px;
+
     font-size: 18px;
-    line-height: 40px;
-    margin-top: 20px;
+    line-height: 30px;
+  
 }
 
 .Same-Date-Text {
@@ -296,7 +310,7 @@ body {
 
 .Section3-Box2-Photo1 {
     width: 100%;
-    height: 250px;
+    
     vertical-align: middle;
     border-style: none;
 
@@ -304,7 +318,6 @@ body {
 
 .Section3-Box2-Photo-Box {
     width: 100%;
-    height: 160px;
     background-color: black;
 
 
@@ -324,24 +337,29 @@ body {
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .Section3-Box2-Box-Headings {
 
-    height: 70px;
+
     background-color: black;
     color: white;
     font-size: 17px;
-    padding-left: 20px;
-    padding-top: 23px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
 }
 
 .Section3-Box2-Popular-Posts {
-    height: 85px;
+ 
     background-color: white;
-
-    gap: 20px;
+padding-left: 5px;
+padding-top: 10px;
+padding-bottom: 10px;
+  
     display: flex;
+
     align-items: center;
     border-bottom: 1px solid #ddd;
 }
@@ -364,7 +382,7 @@ body {
 
 .Popular-Post-Text-Box {
     display: inline-block;
-
+padding-left: 12px;
 }
 
 .Popular-Post-Text1 {
@@ -385,16 +403,15 @@ body {
 
 .Advertise-Box {
 
-    padding: 20px;
+    padding: 16px;
     width: 100%;
-    height: 230px;
-
+   
 }
 
 .Advertise-Box-Child {
 
     width: 100%;
-    height: 190px;
+    height: 210px;
 
     display: flex;
     align-items: center;
@@ -403,39 +420,58 @@ body {
 }
 
 .Section3-Box2-Item3 {
+   
 
-    height: 230px;
     background-color: white;
 
 }
 
 .Tag-Text-Box {
+
     padding: 20px;
+    width: 100%;
+ 
 }
 
 .Tag-Text-Box-Item {
+    gap: 5px;
+
+ 
+
+    width: 100%;
+flex-wrap: wrap;
+
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    align-items: center;
+   align-items: center;
 
 
 
+}
 
-
-
-
+.Fashion-Tag-Text {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 16px;
+   
 
 }
 
 .Tag-Text {
-    font-size: 13px;
+    font-size: 12px;
     padding-top: 2px;
     color: #000;
     background-color: #f1f1f1;
-
-    width: 70px;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
     display: inline-block;
     text-align: center;
+
 
 }
 
@@ -453,20 +489,20 @@ body {
 }
 
 .Inspiration-Photo {
-    width: 47%;
+    width: 49%;
 
 }
 
 .Inspiration-Box {
     display: flex;
 
-    height: 300px;
-
     padding: 20px;
 }
 
 .Inspiration-Photo-Box {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 
@@ -475,11 +511,17 @@ body {
 
 }
 
-.Inspiration-Photo-Box-Item {
-    justify-content: space-around;
-    width: 100%;
-    display: flex;
 
+
+.Inspiration-Photo-Box1 {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.Inspiration-Photo-Box2 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .Section3-Box2-Item5 {
@@ -646,23 +688,7 @@ body {
 
     }
 
-    .Section3-Box2-Photo1 {
 
-        height: 200px;
-
-
-
-    }
-
-    .Inspiration-Photo-Box {
-
-        gap: 19px;
-    }
-
-
-    .Footer {
-        height: 200px;
-    }
 
 }
 
@@ -670,7 +696,15 @@ body {
     .Section2 {
         height: 700px;
     }
+    .Section2-Text-Fashion {
+        letter-spacing: 3px;
 
+    }
+    .Section-Container {
+        padding-left: 25px;
+        padding-right: 25px;
+    
+    }
     .Section3 {
         flex-direction: column;
     }
@@ -691,32 +725,26 @@ body {
 
     }
 
-    .Section3-Box2-Photo-Box {
 
-        height: 130px;
-
-
-
-
-    }
 
     .Section3-Box2 {
         width: 100%;
     }
 
-    .Inspiration-Box {
-        margin-left: 15px;
-        height: 610px;
-    }
 
-    .Inspiration-Photo-Box {
 
-        gap: 30px;
-    }
+    
 }
 
 @media(max-width:768px) {
 
+
+
+    .Section-Container {
+        padding-left: 30px;
+        padding-right: 30px;
+    
+    }
 
     .Section2 {
 
@@ -733,27 +761,16 @@ body {
 
     }
 
-    .Section3-Box2-Popular-Posts {
-        height: 80px;
-
-    }
+   
 
 
-    .Section3-Box2-Item3 {
-
-        height: 170px;
+ 
 
 
-    }
-
-    .Inspiration-Box {
-        margin-right: 10px;
-        height: 500px;
-    }
 
 }
 
-@media(max-width:768px) {
+@media(max-width:576px) {
 
     .Navbar {
         display: none;
@@ -787,14 +804,7 @@ body {
         gap: 15px;
     }
 
-    .Inspiration-Box {
 
-        height: 320px;
-    }
 
-    .Inspiration-Photo {
-        width: 48%;
 
-    }
-    
 }
